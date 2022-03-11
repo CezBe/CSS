@@ -1,40 +1,20 @@
-A
-{
-font-size:24pt;
-text-decoration:none;
+div {
+	width: 602px;
+	background-color: green;
 }
-A:link
-{
-color:navy;
+div:hover{
+	font-size:18mm;
 }
-A:visited
-{
-color:green;
+
+
+#blok1_banaczyk:hover {
+	background-color: blue;
 }
-A:hover
-{
-color:red;
-text-decoration:underline;
+
+#blok2_banaczyk:hover {
+	background-color: yellow;
 }
-/*Male odnosniki*/
-A.maly
-{
-font-size: 12pt;
-}A
-A.maly:link
-{
-color:silver;;
-}
-A.maly:visited
-{
-color:yellow;
-}
-A.maly:hover
-{
-color:black;
-text-decoration:none;
-}
-A:active
-{
-color:silver;
+
+#blok3_banaczyk:hover {
+	background-color: #D1B000;
 }
