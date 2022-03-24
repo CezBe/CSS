@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Kody</title>
+
+</head>
+
+<body>
+	<h2>Zadanie 61 - Kod</h2>
+	<h3>HTML</h3>
+	<textarea id="z61_1" style="resize: none;" rows="23" cols="45">
+<!DOCTYPE html>
+<html>
+	<head>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<ul>
+		<li><a href="http://www.zse.gda.pl" class="maly">Portal WP</a></li>
+		<li><a href="http://onet.pl">Portal Onet.pl</a></li>
+		<li><a href="http://helion.pl">Wydawnictwo Helion</a></li>
+		</ul>
+	</body>
+</html>
+</textarea>
+<h3>CSS</h3>
+	<textarea id="z61_2" style="resize: none;" rows="23" cols="45">
+A
+ {
+ font-size:24pt;
+ text-decoration:none;
+ }
+A:link
+ {
+ color:navy;
+ }
+A:visited
+ {
+ color:green;
+ }
+A:hover
+ {
+ color:red;
+ text-decoration:underline;
+ }
+/*Male odnosniki*/
+A.maly
+ {
+ font-size: 12pt;
+ }
+A.maly:link
+ {
+ color:silver;;
+ }
+A.maly:visited
+ {
+ color:yellow;
+ }
+A.maly:hover
+ {
+ color:black;
+ text-decoration:none;
+ }
+A:active
+ {
+ color:silver;
+ }
+</textarea>
+	<h2>Zadanie 65 - Kod</h2>
+	<h3>HTML</h3>
+    <textarea id="z65_1" style="resize: none;" rows="23" cols="45">
+        <!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF8">
+    <title>Szkielet - Banaczyk</title>
+</head>
+<body>
+    <table width=95% border="1" align="center">
+        <tr>
+            <td width=18% align=center>
+                <marquee bgcolor="red">BANACZYK</marquee>
+                <div id="zadania"></div>
+                <br>
+                <td align=center><iframe width=650 height=650 name="strony" src="start.html" border="0"></iframe>
+
+            </td>
+
+            <td width=18% align=center>
+                <a href="kody.html#z61_1" target="strony">Zadanie61 - Kod</a>
+                <br>
+            </td>
+        </tr>
+    </table>
+    <script>
+        let skip = [62, 63, 64], start = 58, stop = 66
+        function isInSkiped(a){
+            for (let i = 0; i<skip.length;i++){
+                if (skip[i] === a) return false
+            }
+        }
+        for (let i = start;i<=stop;i++){
+            if (isInSkiped(i) === false)  continue
+            document.getElementById("zadania").innerHTML += `<a href="Zadanie${i}/index.html" target="strony">Zadanie${i}</a><br>`
+        }
+    </script>
+</body>
+</html>
+
+    </textarea>
+	<h2>Zadanie 66 - Kod</h2>
+	<h3>HTML</h3>
+    <textarea id="z66_1" style="resize: none;" rows="23" cols="45">
+        <!DOCTYPE html>
+<html>
+	<head>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<p id="a1">Bioinformatyka (z niem. Bioinformatik) – interdyscyplinarna dziedzina obejmujmująca rozwój metod obliczeniowych służących do badania struktury, funkcji i ewolucji genów, genomów i białek. Ponadto odpowiada za rozwój metod wykorzystywanych do zarządzania i analizy informacji biologicznej gromadzonej w toku badań genomicznych oraz badań prowadzonych z zastosowaniem wysokoprzepustowych technik eksperymentalnych</p>
+		<p id="a2">Chemioinformatyka (z niem. Chemoinformatik), także informatyka chemiczna to nauka zajmująca się wykorzystaniem informatyki do rozwiązywania różnorodnych problemów chemicznych jak np. teoria grafów chemicznych czy badania przestrzeni chemicznej[46][47]. Te techniki, nazywane często metodami in silico, wykorzystywane są do przeprowadzania obliczeń w blisko związanej z nią chemii obliczeniowej oraz w chemii kwantowej i procesie projektowania leków. Nauka ta znajduje zastosowanie w wielu gałęziach przemysłu chemicznego do analizy i przetwarzania danych chemicznych.</p>
+		<h1>CSS są piekne</h1>
+		<p id="a3">
+			„Kolejnym pseudoelementem jest :first-line, który w przeciwieństwie do poprzednika
+			obejmuje formatowaniem całą pierwszą linię, a nie tylko pierwszą literę.”
+		</p>
+	</body>
+</html>
+    </textarea>
+	<h3>CSS</h3>
+    <textarea id="z66_2" style="resize: none;" rows="23" cols="45">
+        body{
+	background: black;
+}
+
+p::first-letter{
+	font-size: 114pt;
+}
+p#a1::first-letter{
+	color:blue;
+}
+
+p#a1{
+	font-size: 21pt;
+	color:yellow;
+
+}
+p#a2::first-letter{
+	color:yellow;
+}
+
+p#a2{
+	font-size: 21pt;
+	color:yellow;
+}
+
+h1{
+	color: purple;
+	font-size: 32pt;
+}
+h1::first-letter{
+	color: silver;
+	font-size: 62pt;
+}
+
+p#a3{
+	color: blue;
+	font-size: 22pt;
+}
+
+p#a3::first-line{
+	color: red;
+	font-size: 16pt;
+}
+
+p#a3::first-letter{
+	font-size: 50pt;
+}
+    </textarea>
+</body>
+
+</html>

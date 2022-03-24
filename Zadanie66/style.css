@@ -1,7 +1,47 @@
+body{
+	background: black;
+}
+
 p::first-letter{
 	font-size: 114pt;
-	color: blue;
 }
-p{
-	
+p#a1::first-letter{
+	color:blue;
+}
+
+p#a1{
+	font-size: 21pt;
+	color:yellow;
+
+}
+p#a2::first-letter{
+	color:yellow;
+}
+
+p#a2{
+	font-size: 21pt;
+	color:yellow;
+}
+
+h1{
+	color: purple;
+	font-size: 32pt;
+}
+h1::first-letter{
+	color: silver;
+	font-size: 62pt;
+}
+
+p#a3{
+	color: blue;
+	font-size: 22pt;
+}
+
+p#a3::first-line{
+	color: red;
+	font-size: 16pt;
+}
+
+p#a3::first-letter{
+	font-size: 50pt;
 }

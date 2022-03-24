@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<style>
+			p{
+				border: 2px solid black;
+			}
+		</style>
+
+	</head>
+	<body>
+		<h2>Pseudoelementem :first-line, który obejmuje formatowaniem całą pierwszą linię</h2>
+		<p>
+			p<br>
+			 {<br>
+			 color:navy;<br>
+			 font-size:12pt;<br>
+			 }<br>
+			p:first-line<br>
+			 {<br>
+			 color:red;<br>
+			 font-size:20pt;<br>
+			 font-weight:bold;<br>
+			 }<br>
+		</p>
+	<h2>pseudoelementy: :after oraz :before. Poza :first-letter oraz :first-line w specyfikacji umieszczono jeszcze dwa inne pseudoelementy: :after oraz :before. Oba elementy służą do umieszczania tekstu przed i za formatowanym elementem strony. Poniżej zamieszczam odpowiedni przykład.</h2>
+	<p>
+		p:before<br>
+ {<br>
+ content:"TO SĄ ĆWICZENIA";<br>
+ font-size:15pt;<br>
+ font-style:italic; <br>
+ font-weight:bold;<br>
+ }<br>
+p:after<br>
+ {<br>
+ content:"AUTOR Król Lew";<br>
+ font-size:15pt;<br>
+ font-style:italic;<br>
+ font-weight:bold;<br>
+ }
+	</p>
+	<h2>Pseudoelement :first-letter pozwala na formatowanie pierwszej litery w bloku
+tekstu.
+Przykładowy arkusz spowoduje powiększenie pierwszej litery do wielkości 100 punktów i
+nadanie jej koloru czerwoneg</h2>
+	<p>
+		Pseudoelement :first-letter pozwala na formatowanie pierwszej litery w bloku<br>
+tekstu. <br>
+Przykładowy arkusz spowoduje powiększenie pierwszej litery do wielkości 100 punktów i <br>
+nadanie jej koloru czerwoneg<br>
+	</p>
+	<h3>Efektem działania powyższego arkusza stylów będzie powiększona pierwsza litera każdego akapitu występującego w dokumencie XHTML/HTML. Zastosowanie pseudoelement :first-letter z innymi znacznikami. Przykład z nagłówkiem stopnia pierwszego.
+</h3>
+	<p>H1<br>
+ {<br>
+ color:navy;<br>
+ font-size:30pt;<br>
+ }<br>
+H1:first-letter<br>
+ {<br>
+ color:red;<br>
+ font-size:100pt;<br>
+ }</p>
+	</body>
+
+</html>

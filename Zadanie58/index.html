@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<style>
+			p{
+				border: 2px solid black;
+			}
+		</style>
+
+	</head>
+	<body>
+		<ol>
+			<h1>
+			<li>Co to są pseudoklasyk?<br>-CSS przewiduje kilka ściśle określonych klas pozwalających na formatowanie niektórych elementów dokumentu są to Pseudoklasy</li>
+			<li>Uwaga dotycząca dwukropka :<br>-Szalenie istotnym elementem w tej konstrukcji jest dwukropek występujący pomiędzy selektorem a nazwą klasy. </li>
+			<li>Tabela(wykonana w htmlu) opisującą pseudoklasy.<br>-><h5>-A:link | odpowiada za wygląd hiperłącza, jeżeli nie zostało ono jeszcze odwiedzone<br>
+				A:visited | odpowiada za formatowanie hiperłącza już odwiedzonego<br>
+				A:hover | zmiany pewnych elementów po najechaniu na nie urządzeniem wskazującym (np. myszą), np. odsyłacz, nad którym zatrzymano kusor lub element blokowy DIV.<br>
+				A:active | pozwala nadać dowolne formatowanie elementowi po nakierowaniu na niego wskaźnika myszy i wciśnięciu przycisku, ale przed jego zwolnieniem (odsyłacz aktywny→kliknięty).<br>
+				A:focus | jeżeli chcemy, by właśnie wyświetlany odsyłacz z menu był formatowany innym kolorem. Odsyłacz posiadający tzw fokus-zaznaczony przy poruszaniu się po dokumencie przy pomocy klawisza
+			</h5></li>
+			<li>Zastosowanie pseudoklasy :active<br><h5><ul><li>można używać jako uzupełnienia definicji odnośników</li><li>jako elementu poprawiającego czytelność formularzy.</li></ul></h5></li>
+			<li>Przykłady (trzy) kodów definiowania pseudoklas (wraz z tematem)<br>-</li>
+			</h1>
+			<p>
+				Przykład<br>
+				Temat: Arkusz wykorzystujący :link oraz :visited pseudoklasy w połączeniu z selektorem<br>
+				A. Przykładowa definicja sformatuje odnośnik za pomocą koloru czerwonego i po wybraniu<br>
+				taki odnośnik będzie miał kolor zielony.<br>
+				A:link<br>
+				 {<br>
+				 color:red;<br>
+				 }<br>
+				A:visited<br>
+				 {<br>
+				 color:green;<br>
+				 }<br>
+			</p><br>
+			<p>
+				Przykład<br>
+				Temat: Formatowanie wyglądu wszystkich odnośników w dokumencie XHTML/HTML.<br>
+				A /* Definicja odsyłacza podstawowego*/<br>
+				 {<br>
+				 font-size:12pt;<br>
+				 text-decoration:none;<br>
+				 }<br>
+				A:link<br>
+				 {<br>
+				 color:navy;<br>
+				 }<br>
+				A:visited<br>
+				 {<br>
+				 color:green;<br>
+				 }<br>
+				A:hover<br>
+				 {<br>
+				 color:red;<br>
+				 text-decoration:underline;<br>
+				 }<br>
+			</p><br>
+			<p>
+				Przykład<br>
+				Temat: Zastosowanie :focus<br>
+				A:focus<br>
+				 {<br>
+				 color:braun;<br>
+				 }<br>
+			</p>
+		</ol>
+	</body>
+</html>

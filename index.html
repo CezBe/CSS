@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF8">
+    <title>Szkielet - Banaczyk</title>
+</head>
+<body>
+    <table width=95% border="1" align="center">
+        <tr>
+            <td width=18% align=center>
+                <marquee bgcolor="red">BANACZYK</marquee>
+                <div id="zadania"></div>
+                <br>
+                <td align=center><iframe width=650 height=650 name="strony" src="https://zse.edu.gdansk.pl/pl" border="0"></iframe>
+
+            </td>
+            
+            <td width=18% align=center>
+                <a href="kody.html#z61_1" target="strony">Zadanie61 - Kod</a>
+                <br>
+                <a href="kody.html#z65_1" target="strony">Zadanie65 - Kod</a>
+                <br>
+                <a href="kody.html#z66_1" target="strony">Zadanie66 - Kod</a>
+                <br>
+            </td>
+        </tr>
+    </table>
+    <script>
+        let skip = [62, 63, 64], start = 58, stop = 66
+        function isInSkiped(a){
+            for (let i = 0; i<skip.length;i++){
+                if (skip[i] === a) return false
+            }
+        }
+        for (let i = start;i<=stop;i++){
+            if (isInSkiped(i) === false)  continue
+            document.getElementById("zadania").innerHTML += `<a href="Zadanie${i}/index.html" target="strony">Zadanie${i}</a><br>`
+        }
+    </script>
+</body>
+</html>
